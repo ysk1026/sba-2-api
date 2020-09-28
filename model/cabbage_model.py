@@ -1,6 +1,7 @@
+import os
 import sys
-sys.path.insert(0, '/Users/youngseonkim/Documents/SbaProjects')
-from util.file_handler import FileReader
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+from util.file_helper import FileReader
 import pandas as pd
 import numpy as np
 import tensorflow as tf
